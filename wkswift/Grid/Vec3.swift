@@ -15,7 +15,7 @@ public let toDegrees = 180.0 / Double.pi
 public let doublePi = 2.0 * Double.pi
 public let halfPi = Double.pi / 2.0
 
-public struct Vec3: CustomStringConvertible, Equatable {
+public struct Vec3: CustomStringConvertible, Equatable, Sendable {
     public var x, y, z: Double
     
     public init(x: Double, y: Double, z: Double) {
@@ -73,6 +73,20 @@ public struct Vec3: CustomStringConvertible, Equatable {
     
     public func toLatLon() -> LatLon {
         return LatLon(sphereVec: self)
+    }
+    
+    // dot product
+    public func dot(_ other: Vec3) -> Double {
+        return x * other.x + y * other.y + z * other.z
+    }
+    
+    // Cross product
+    public func cross(_ other: Vec3) -> Vec3 {
+        return Vec3(
+            x: y * other.z - z * other.y,
+            y: z * other.x - x * other.z,
+            z: x * other.y - y * other.x
+        )
     }
     
     public static func newSphereVecFromLatLon(_ latLon: LatLon) -> Vec3 {

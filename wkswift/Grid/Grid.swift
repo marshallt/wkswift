@@ -9,7 +9,7 @@ import Foundation
 
 
 // Grid struct to manage the cubic grid
-public struct Grid {
+public struct Grid: Sendable {
     public let resolution: Int
     public let spacing: Double
     public let cellsPerFace: Int
@@ -581,10 +581,4 @@ public struct Grid {
     }
 }
 
-// Extension to make Grid conform to CustomStringConvertible
-extension Grid: CustomStringConvertible {
-    public var description: String {
-        return description()
-    }
-}
 

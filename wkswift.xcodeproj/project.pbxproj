@@ -14,19 +14,11 @@
 			remoteGlobalIDString = AB88A2B92DBC0B690020D753;
 			remoteInfo = wkswift;
 		};
-		AB88A2D32DBC0B6A0020D753 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB88A2B22DBC0B690020D753 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AB88A2B92DBC0B690020D753;
-			remoteInfo = wkswift;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AB88A2BA2DBC0B690020D753 /* wkswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB88A2C82DBC0B6A0020D753 /* wkswiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wkswiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB88A2D22DBC0B6A0020D753 /* wkswiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wkswiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -62,13 +54,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB88A2CF2DBC0B6A0020D753 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +72,6 @@
 			children = (
 				AB88A2BA2DBC0B690020D753 /* wkswift.app */,
 				AB88A2C82DBC0B6A0020D753 /* wkswiftTests.xctest */,
-				AB88A2D22DBC0B6A0020D753 /* wkswiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +124,6 @@
 			productReference = AB88A2C82DBC0B6A0020D753 /* wkswiftTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AB88A2D12DBC0B6A0020D753 /* wkswiftUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB88A2E22DBC0B6A0020D753 /* Build configuration list for PBXNativeTarget "wkswiftUITests" */;
-			buildPhases = (
-				AB88A2CE2DBC0B6A0020D753 /* Sources */,
-				AB88A2CF2DBC0B6A0020D753 /* Frameworks */,
-				AB88A2D02DBC0B6A0020D753 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AB88A2D42DBC0B6A0020D753 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				AB88A2D52DBC0B6A0020D753 /* wkswiftUITests */,
-			);
-			name = wkswiftUITests;
-			packageProductDependencies = (
-			);
-			productName = wkswiftUITests;
-			productReference = AB88A2D22DBC0B6A0020D753 /* wkswiftUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +138,6 @@
 						CreatedOnToolsVersion = 16.3;
 					};
 					AB88A2C72DBC0B6A0020D753 = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = AB88A2B92DBC0B690020D753;
-					};
-					AB88A2D12DBC0B6A0020D753 = {
 						CreatedOnToolsVersion = 16.3;
 						TestTargetID = AB88A2B92DBC0B690020D753;
 					};
@@ -202,7 +159,6 @@
 			targets = (
 				AB88A2B92DBC0B690020D753 /* wkswift */,
 				AB88A2C72DBC0B6A0020D753 /* wkswiftTests */,
-				AB88A2D12DBC0B6A0020D753 /* wkswiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -216,13 +172,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AB88A2C62DBC0B6A0020D753 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB88A2D02DBC0B6A0020D753 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +195,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AB88A2CE2DBC0B6A0020D753 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +202,6 @@
 			isa = PBXTargetDependency;
 			target = AB88A2B92DBC0B690020D753 /* wkswift */;
 			targetProxy = AB88A2C92DBC0B6A0020D753 /* PBXContainerItemProxy */;
-		};
-		AB88A2D42DBC0B6A0020D753 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AB88A2B92DBC0B690020D753 /* wkswift */;
-			targetProxy = AB88A2D32DBC0B6A0020D753 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -471,36 +408,6 @@
 			};
 			name = Release;
 		};
-		AB88A2E32DBC0B6A0020D753 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.scholari.wkswiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TEST_TARGET_NAME = wkswift;
-			};
-			name = Debug;
-		};
-		AB88A2E42DBC0B6A0020D753 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.scholari.wkswiftUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 6.0;
-				TEST_TARGET_NAME = wkswift;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -527,15 +434,6 @@
 			buildConfigurations = (
 				AB88A2E02DBC0B6A0020D753 /* Debug */,
 				AB88A2E12DBC0B6A0020D753 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB88A2E22DBC0B6A0020D753 /* Build configuration list for PBXNativeTarget "wkswiftUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AB88A2E32DBC0B6A0020D753 /* Debug */,
-				AB88A2E42DBC0B6A0020D753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -5,7 +5,7 @@
 //  Created by Marshall Thames on 4/25/25.
 //
 
-public struct CellCoord: CustomStringConvertible, Hashable {
+public struct CellCoord: CustomStringConvertible, Hashable, Sendable {
     public let face: Int
     public let u: Int
     public let v: Int

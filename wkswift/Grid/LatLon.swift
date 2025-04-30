@@ -17,7 +17,7 @@ import Foundation
 
 /// LatLon represents a point on the unit sphere
 /// Lat and Lon are in DEGREES not radians.
-public struct LatLon: Equatable {
+public struct LatLon: Equatable, Sendable {
     public let lat: Double
     public let lon: Double
     
