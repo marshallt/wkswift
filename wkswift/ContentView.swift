@@ -9,14 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        makeGlobeView()
     }
+}
+
+func makeGlobeView() -> some View {
+    let grid = Grid(resolution: 16)
+    return GlobeView(grid: grid)
 }
 
 #Preview {
